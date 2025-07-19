@@ -1,0 +1,131 @@
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fdfc;
+  color: #2b2e2e;
+}
+.menu {
+  display: flex;
+  justify-content: center; /* Центрируем меню по горизонтали */
+  gap: 32px; /* Расстояние между ссылками */
+  margin-bottom: 24px; /* Отступ снизу */
+  font-size: 1.125rem; /* Размер текста примерно 18px */
+  font-weight: 600;
+  background-color: #e6fffa; /* Светлый фон для меню */
+  padding: 12px 0;
+  border-radius: 12px;
+  border: 2px solid #b2f5ea; /* Легкая обводка */
+  user-select: none; /* Чтобы текст не выделялся при клике */
+}
+
+.menu a {
+  color: #319795;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: #319795;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(49, 151, 149, 0.4);
+}
+
+
+/* Заголовок */
+header {
+  background: linear-gradient(to right, #38b2ac, #319795);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Навигация */
+nav.menu {
+  background-color: #e6fffa;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 2px solid #b2f5ea;
+  font-weight: bold;
+}
+
+nav.menu a {
+  color: #319795;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav.menu a:hover,
+nav.menu a.active {
+  background-color: #b2f5ea;
+  color: #234e52;
+}
+
+/* Основной блок */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #2b2e2e;
+}
+
+.support-photo {
+  margin-top: 30px;
+}
+
+.support-photo img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.support-photo img:hover {
+  transform: scale(1.03);
+}
+
+/* Подвал */
+footer {
+  background-color: #2c7a7b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+}
+

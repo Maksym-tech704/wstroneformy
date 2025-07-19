@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twoja nowa wersja zaczyna się teraz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="bg-gradient-to-r from-emerald-400 to-teal-500 text-white p-8 text-center">
+    <nav class="flex justify-center gap-8 mb-6 text-lg">
+      <a href="index.html" class="hover:underline font-bold underline">Strona główna</a>
+      <a href="individual.html" class="hover:underline">Indywidualnie</a>
+      <a href="motivation.html" class="hover:underline">Motywacja</a>
+      <a href="accessibility.html" class="hover:underline">Dostępność</a>
+    </nav>
+
+    <h1 class="text-4xl font-extrabold">Twoja nowa wersja zaczyna się teraz</h1>
+    <p class="text-lg mt-4">Motywacja. Wsparcie. Wynik. Wszystko w jednym miejscu.</p>
+  </header>
+
+  <section class="p-8 text-center">
+    <h2 class="text-2xl font-bold mb-4">🌱 Dlaczego warto wybrać nas:</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="/individual.html" class="bg-emerald-100 p-6 rounded-lg shadow-md hover:shadow-xl transition block">
+        <h3 class="text-xl font-semibold mb-2">Indywidualne podejście</h3>
+        <p>Plany żywieniowe i treningowe dostosowane do Ciebie.</p>
+      </a>
+      <a href="/motivation.html" class="bg-teal-100 p-6 rounded-lg shadow-md hover:shadow-xl transition block">
+        <h3 class="text-xl font-semibold mb-2">Stała motywacja</h3>
+        <p>Przypomnienia, inspirujące historie i wsparcie.</p>
+      </a>
+      <a href="/accessibility.html" class="bg-emerald-100 p-6 rounded-lg shadow-md hover:shadow-xl transition block">
+        <h3 class="text-xl font-semibold mb-2">Prostota i dostępność</h3>
+        <p>Wszystko, czego potrzebujesz, zawsze pod ręką.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-teal-50 p-8 text-center">
+    <h2 class="text-2xl font-bold mb-4">🌟 Zacznij już teraz</h2>
+    <p class="mb-6 max-w-2xl mx-auto">Wypełnij formularz, a otrzymasz plan i wsparcie już teraz — zacznij działać!</p>
+
+    <form action="https://formsubmit.co/vasa.123456fas@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Twoje imię" required />
+      <input type="email" name="email" placeholder="Twój email" required />
+      <textarea name="message" placeholder="Twoja wiadomość" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
+  <section class="bg-white p-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-xl font-semibold mb-4">Obserwuj nas w mediach społecznościowych:</h3>
+      <div class="flex justify-center gap-6">
+        <a href="https://t.me/czas_na_zmianie" target="_blank" class="flex flex-col items-center text-teal-700 hover:text-teal-900">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" class="w-8 h-8 mb-1" />
+          Telegram
+        </a>
+        <a href="https://www.instagram.com/w_strone_formy_?igsh=MWR3eGI3ajU3ZHI1ZA==" target="_blank" class="flex flex-col items-center text-pink-600 hover:text-pink-800">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-8 h-8 mb-1" />
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61578196230697" target="_blank" class="flex flex-col items-center text-blue-600 hover:text-blue-800">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="w-8 h-8 mb-1" />
+          Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">
+    © 2025 Przemieniaj się z nami. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>

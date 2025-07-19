@@ -1,0 +1,128 @@
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fdfc;
+  color: #2b2e2e;
+}
+
+/* Заголовок */
+header {
+  background: linear-gradient(to right, #38b2ac, #319795);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Навигация */
+nav.menu {
+  background-color: #e6fffa;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 2px solid #b2f5ea;
+  font-weight: bold;
+}
+
+nav.menu a {
+  color: #319795;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav.menu a:hover,
+nav.menu a.active {
+  background-color: #b2f5ea;
+  color: #234e52;
+}
+
+/* Секция */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c7a7b;
+}
+
+section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Картинки с результатами */
+.result-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.result-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.result-gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Соцсети */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.socials a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.socials a img:hover {
+  transform: scale(1.1);
+}
+
+/* Подвал */
+footer {
+  background-color: #2c7a7b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
